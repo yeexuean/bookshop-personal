@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Story Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--Nav Bar-->
+  <header class="header">
+    <nav class="nav-bar">
+      <ul class="nav-menus">
+        <li>
+          <a href="">Home</a>
+          <img src="icon/dropdown.svg" alt="dropdown icon">
+        </li>
+        <li>
+          <a href="">Categories</a>
+          <img src="icon/dropdown.svg" alt="dropdown icon">
+        </li>
+        <li>
+          <a href="">Authors</a>
+          <img src="icon/dropdown.svg" alt="dropdown icon">
+        </li>
+        <li><a href="">Contact us</a></li>
+      </ul>
+      
+      <div class="logo">
+        <a href="index.html"><img src="logo.svg" alt="store logo"></a>
+      </div>
+    
+      <div class="nav-icons">
+        <a href=""> <img src="icon/search.svg" alt="search bar"></a>
+        <a href="admin-inventory.html"> <img src="icon/inventory-icon.svg" alt="inventory icon"></a>
+        <a href="sign-in.html"> <img src="icon/profile.svg" alt="user-profile"></a> 
+        <!--if admin signed in, it should not direct them to the sign in page 
+        when they click on the icon-->
+      </div>
+    </nav>
+  </header>
+
+  <!--book inventory-->
+  <div class="book-inventory-title">
+    
+    <h1>Book Inventory</h1>
+
+    <div class="filters">
+      <select name="category" class="category">
+        <option value="fiction">Fiction</option>
+        <option value="fiction">Romance</option>
+        <option value="fiction">Thriller</option>
+        <option value="fiction">Horror</option>
+        <option value="fiction">Comedy</option>
+        <option value="fiction">Sci-Fi</option>
+        <option value="fiction">Children</option>
+        <option value="fiction">Psychology</option>
+      </select>
+    </div>
+
+    <div class="filters">
+      <select name="author" class="author">
+        <option value="anahuang">Ana Huang</option>
+        <option value="Lauren Roberts">Lauren Roberts</option>
+      </select>
+    </div>
+
+    <div class="filters">
+      <select name="stock" class="stock">
+        <option value="in-stock">In Stock</option>
+        <option value="out-of-stock">Out of Stock</option>
+      </select>
+    </div>
+
+    <div class="filters">
+      <input type="text" placeholder="Quick Search" >
+    </div>
+
+    <div class="add-stock-btn">
+      <p>+</p>
+    </div>
+  </div>
+
+  <div class="stock-details">
+    <table>
+      <thead>
+        <tr>
+          <th>Book Cover</th>
+          <th>Book Title</th>
+          <th>ISBN-13</th>
+          <th>Quantity</th>
+          <th>Author</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!--book 1-->
+        <tr class="stock-table-row">
+          <td><img src="bookcover/the-housemaid.png" alt="the housemaid book"></td>
+          <td>The Housemaid</td>
+          <td>978-0-7432-7356-5</td>
+          <td>34</td>
+          <td>Freida McFadden</td>
+        </tr>
+
+        <!--book 2-->
+        <tr class="stock-table-row">
+          <td><img src="bookcover/reckless.jpg" alt="reckless book"></td>
+          <td>Reckless</td>
+          <td>978-1-4028-9462-6</td>
+          <td>162</td>
+          <td>Lauren Roberts</td>
+        </tr>
+
+        <!--book 3-->
+        <tr class="stock-table-row">
+          <td><img src="bookcover/twisted-love.png" alt="twisted-love book"></td>
+          <td>Twisted Love</td>
+          <td>978-0-395-36341-6</td>
+          <td>235</td>
+          <td>Ana Huang</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div>
+      <a href="index.html" class="Back to home">
+        <img src="icon/left-icon.svg">
+        Continue Shopping
+      </a>
+
+      <div class="stock-pages">
+        <select name="page-numbers" class="page-flip">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <p>Showing 1 of 5</p>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>

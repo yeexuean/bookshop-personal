@@ -28,12 +28,10 @@
         <li><a href="">Contact us</a></li>
       </ul>
       
-      <div class="logo-container">
-        <div class="logo">
-          <a href="index.html"><img src="logo.svg" alt="store logo"></a>
-        </div>
+      <div class="logo">
+        <a href="index.html"><img src="logo.svg" alt="store logo"></a>
       </div>
-
+    
       <div class="nav-icons">
         <a href=""> <img src="icon/search.svg" alt="search bar"></a>
         <a href="shopping-cart.html"> <img src="icon/cart.svg" alt="shopping cart"></a>
@@ -42,123 +40,80 @@
     </nav>
   </header>
 
-  <div class="order-confirmation-page">
-
-    <div class="tick-row">
-      <div class="tick-icon">
-        <img src="icon/tick.svg" alt="confirmation-tick">
-      </div>
-
-      <div class="back-to-shopping">
-        <img src="icon/arrow-left.svg" alt="arrow-left">
-        <a href="index.html"><p>Back to shopping</p></a>
-      </div>
-    </div>
-    
-    <h1>
-      Thank you<br>
-      Your order has been received
-    </h1>
-
-    <p class="confirmation-text">A confirmation email will be sent to you shortly.</p>
-
-    <div class="order-details-box">
-      <h2>Order Details</h2>
-
-      <div class="order-details">
-        <div class="order-details-row">
-          <p class="left-text">Order number: </p>
-          <p class="right-text">10000000089</p>
-        </div>
-
-        <div class="order-details-row">
-          <p class="left-text">Date: </p>
-          <p class="right-text">May 08, 2024</p>
-        </div>
-
-        <div class="order-details-row">
-          <p class="left-text">Payment Method: </p>
-          <p class="right-text">Credit Card</p>
-        </div>
-      </div>
-
-      <div class="order-details-delemeter"></div>
-
-      <div class="total-row">
-        <p>Total:</p>
-        <p>£22.70</p>
-      </div>
+  <!--sign in options-->
+  <div class="create-account-box">
+    <div class="create-account-title">
+      <a href="sign-in.html"><h2>Sign In</h2></a>
+      <h2>Create an Account</h2>
     </div>
 
-    <!--Product detail section-->
-    <div class="products-container">
+    <div class="create-account-option-delemeter"></div>
 
-        <div class="products-heading">
-          <h3>Products</h3>
+    <div class="create-account-delemeter"></div>
+
+    <div class="create-account-details">
+      <h3>* Title</h3>
+      <select name="title" class="account-title"> <!--needs to link to db-->
+        <option value="mr">Mr</option>
+        <option value="ms">Ms</option>
+        <option value="miss">Miss</option>
+      </select>
+
+      <h3>* First Name</h3>
+      <input type="text">
+
+      <h3>* Last Name</h3>
+      <input type="text">
+
+      <h3>* Username</h3>
+      <input type="text">
+
+      <h3>* Email address</h3>
+      <input type="text">
+
+      <h3>* Confirm Email address</h3>
+      <input type="text">
+
+      <h3>* Phone number</h3>
+      <select name="phone-number" class="phone-number-country-code">
+        <option value="+44">+44</option>
+        <option value="+65">+65</option>
+        <option value="+88">+88</option>
+      </select>
+      <input type="text">
+
+      <h3>* Create a Password</h3>
+      <p class="password-requirement">Passwords must be between 12 and 64 characters</p>
+      <div class="create-account-password-box">
+        <input type="text">
+        <button class="password-show-btn">
+          <img src="icon/password-eye-close.svg" alt="closing-eye-pw">
+        </button>
+      </div>
+
+      <h3>* Confirm Password</h3>
+      <div class="create-account-password-box">
+        <input type="text">
+        <button class="password-show-btn">
+          <img src="icon/password-eye-close.svg" alt="closing-eye-pw">
+        </button>
+      </div>
+
+      <div class="promotion-query">
+        <div class="first-line">
+          <input type="checkbox" class="promotion-checkbox">
+          <p class="no-thanks">No thanks</p>
         </div>
-  
-        <div class="product-details">
-          <div class="order-list">
-            <div class="order-list-row">
-              <p>1X Reckless</p>
-              <p>£5.90</p>
-            </div>
-            <img src="bookcover/reckless.jpg" alt="reckless-book">
-          </div>
-    
-          <div class="product-details-delemeter"></div>
-    
-          <div class="order-list">
-            <div class="order-list-row">
-              <p>1X Twisted Love</p>
-              <p>£8.90</p>
-            </div>
-            <img src="bookcover/twisted-love.png" alt="twisted-love-book">
-          </div>
-    
-          <div class="product-details-delemeter"></div>
-    
-          <div class="order-list">
-            <div class="order-list-row">
-              <p>1X Iron Flame</p>
-              <p>£5.90</p>
-            </div>
-            <img src="bookcover/iron-flame.jpg" alt="iron-flame-book">
-          </div>
-    
-          <div class="product-details-delemeter"></div>
-    
-          <div class="customer-details-container">
-    
-            <h3>Customer Details</h3>
-    
-            <div class="customer-details">
-              <div class="column-1">
-                <h4>Contact</h4>
-                <p>Email: adam@gmail.com</p>
-                <h4>Bank accounts and cards</h4>
-                <p>Credit card: xxxx xxxx xxxx 7492</p>
-              </div>
-    
-              <div class="column-2">
-                <h4>Billing Address</h4>
-                <p>Adam Marallo</p>
-                <p>19 Towers Drive</p>
-                <p>Leicestershire</p>
-                <p>LE10 0FF</p>
-                <p>United Kingdom</p>
-              </div>
-    
-            </div>
-    
-          </div>
-        </div>
+        <p class="second-line"s>
+          Tick this box if you prefer not to
+          receive updates on new arrivals and exclusive offers. 
+          Click to see your privacy policy.</p>
+      </div>
+
+      <button class="create-account-sign-in">CREATE AN ACCOUNT</button>
     </div>
-    
-    
   </div>
 
-  
   <!--footer-->
   <footer class="footer">
 
